@@ -1,0 +1,77 @@
+{
+  "defaultIterations": 200,
+  "teams": [
+    {
+      "id": "mavuika-xilonen-c0",
+      "name": "玛薇卡 / 希诺宁 / 茜特菈莉 / 班尼特",
+      "axis": "融化",
+      "config": "mavuika-xilonen-citlali-bennett.txt",
+      "characters": ["mavuika", "xilonen", "citlali", "bennett"],
+      "notes": "KQM C0 标准融化队（经典公认主流队）。来源 db.kqm.gg/db/cdz8FgbKf7wk",
+      "source": "kqm"
+    },
+    {
+      "id": "mavuika-xilonen-custom-gear",
+      "name": "玛薇卡队（自定义配装）",
+      "axis": "融化",
+      "config": "mavuika-xilonen-custom-gear.txt",
+      "characters": ["mavuika", "xilonen", "citlali", "bennett"],
+      "notes": "武器：超越之匙/苍古/祭星者之望/西风剑；圣遗物：黑曜/绘卷/绘卷/宗室。玛薇卡C0班尼特C6。",
+      "source": "user-custom"
+    },
+    {
+      "id": "mavuika-nicole-sucrose",
+      "name": "玛薇卡 / 尼可 / 茜特菈莉 / 砂糖",
+      "axis": "融化",
+      "config": "mavuika-nicole-citlali-sucrose.txt",
+      "characters": ["mavuika", "nicole", "citlali", "sucrose"],
+      "notes": "KQM C0 配置。来源 db.kqm.gg/db/LcJMWMLG89j8",
+      "source": "kqm"
+    },
+    {
+      "id": "mavuika-esco-c0",
+      "name": "玛薇卡 / 爱可菲 / 茜特菈莉 / 班尼特",
+      "axis": "融化",
+      "config": "mavuika-esco-c0.txt",
+      "characters": ["mavuika", "escoffier", "citlali", "bennett"],
+      "notes": "玛薇卡 C0、班尼特 C6；由原 C2 share 改 C0 后重跑。",
+      "source": "gcsim-local"
+    },
+    {
+      "id": "varesa-overload",
+      "name": "瓦雷莎超载队",
+      "axis": "超载",
+      "shareId": "wfQnC9ccgpmK",
+      "characters": ["varesa", "ororon", "mavuika", "chevreuse"],
+      "notes": "社区 share 配置本地重跑。",
+      "source": "gcsim-share"
+    },
+    {
+      "id": "hutao-vape",
+      "name": "胡桃蒸发",
+      "axis": "蒸发",
+      "shareId": "dhtzhdQDtdfj",
+      "characters": ["hutao", "yelan", "bennett", "furina"],
+      "notes": "经典胡桃蒸发轴，社区 share。",
+      "source": "gcsim-share"
+    },
+    {
+      "id": "neuv-hyper",
+      "name": "那维莱特直伤",
+      "axis": "直伤",
+      "shareId": "jwDTPmjKrPbt",
+      "characters": ["neuvillette", "furina", "zhongli", "jean"],
+      "notes": "旧版 share，可能需本地重跑验证。",
+      "source": "gcsim-share"
+    },
+    {
+      "id": "raiden-national",
+      "name": "雷国（官方教程轴）",
+      "axis": "蒸发/超载混合",
+      "config": "raiden-national.txt",
+      "characters": ["raiden", "xingqiu", "xiangling", "bennett"],
+      "notes": "gcsim 官方教程示例，非最优化轴，用作基线。",
+      "source": "gcsim-docs"
+    }
+  ]
+}

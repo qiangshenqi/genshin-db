@@ -111,3 +111,10 @@ typings/
 
 # TernJS port file
 .tern-port
+
+# gcsim local binary & run artifacts
+tools/gcsim/gcsim.exe
+tools/gcsim/results/
+tools/gcsim/configs/*.run.txt
+tools/gcsim/configs/*-from-share.txt
+

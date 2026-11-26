@@ -1,0 +1,347 @@
+{
+  "engine": "gcsim",
+  "binary": "tools/gcsim/gcsim.exe",
+  "versionHint": "v2.50.0",
+  "generatedAt": "2026-11-26T02:51:45.021Z",
+  "iterations": 200,
+  "assumptions": [
+    "使用开源帧级模拟器 gcsim（https://github.com/genshinsim/gcsim）。",
+    "队伍需要完整轴与面板配置，无法对全部角色组合暴力穷举。",
+    "本结果来自 curated 配置 + 本地重跑；不同命座/精炼/轴会导致 DPS 差异很大。",
+    "本地默认 iteration=200（可用环境变量 GCSIM_ITERS 调整）。"
+  ],
+  "ranking": [
+    {
+      "id": "mavuika-xilonen-c0",
+      "name": "玛薇卡 / 希诺宁 / 茜特菈莉 / 班尼特",
+      "axis": "融化",
+      "notes": "KQM C0 标准融化队（经典公认主流队）。来源 db.kqm.gg/db/cdz8FgbKf7wk",
+      "source": "kqm",
+      "shareId": null,
+      "shareUrl": null,
+      "shareDps": null,
+      "characters": [
+        "mavuika",
+        "citlali",
+        "xilonen",
+        "bennett"
+      ],
+      "dps": 133645,
+      "dpsMin": 120633,
+      "dpsMax": 140203,
+      "duration": 72.14399999999999,
+      "iterations": 200,
+      "configFile": "tools/gcsim/configs/mavuika-xilonen-citlali-bennett.txt"
+    },
+    {
+      "id": "mavuika-nicole-sucrose",
+      "name": "玛薇卡 / 尼可 / 茜特菈莉 / 砂糖",
+      "axis": "融化",
+      "notes": "KQM C0 配置。来源 db.kqm.gg/db/LcJMWMLG89j8",
+      "source": "kqm",
+      "shareId": null,
+      "shareUrl": null,
+      "shareDps": null,
+      "characters": [
+        "mavuika",
+        "citlali",
+        "sucrose",
+        "nicole"
+      ],
+      "dps": 126439,
+      "dpsMin": 115832,
+      "dpsMax": 130352,
+      "duration": 71.8,
+      "iterations": 200,
+      "configFile": "tools/gcsim/configs/mavuika-nicole-citlali-sucrose.txt"
+    },
+    {
+      "id": "mavuika-esco-c0",
+      "name": "玛薇卡 / 爱可菲 / 茜特菈莉 / 班尼特",
+      "axis": "融化",
+      "notes": "玛薇卡 C0、班尼特 C6；由原 C2 share 改 C0 后重跑。",
+      "source": "gcsim-local",
+      "shareId": null,
+      "shareUrl": null,
+      "shareDps": null,
+      "characters": [
+        "mavuika",
+        "escoffier",
+        "citlali",
+        "bennett"
+      ],
+      "dps": 123237,
+      "dpsMin": 114741,
+      "dpsMax": 136074,
+      "duration": 78.36824999999996,
+      "iterations": 200,
+      "configFile": "tools/gcsim/configs/mavuika-esco-c0.txt"
+    },
+    {
+      "id": "varesa-overload",
+      "name": "瓦雷莎超载队",
+      "axis": "超载",
+      "notes": "社区 share 配置本地重跑。",
+      "source": "gcsim-share",
+      "shareId": "wfQnC9ccgpmK",
+      "shareUrl": "https://gcsim.app/sh/wfQnC9ccgpmK",
+      "shareDps": 115853,
+      "characters": [
+        "varesa",
+        "ororon",
+        "mavuika",
+        "chevreuse"
+      ],
+      "dps": 115043,
+      "dpsMin": 107564,
+      "dpsMax": 122173,
+      "duration": 81.14816666666668,
+      "iterations": 200,
+      "configFile": "tools/gcsim/configs/varesa-overload.txt"
+    },
+    {
+      "id": "neuv-hyper",
+      "name": "那维莱特直伤",
+      "axis": "直伤",
+      "notes": "旧版 share，可能需本地重跑验证。",
+      "source": "gcsim-share",
+      "shareId": "jwDTPmjKrPbt",
+      "shareUrl": "https://gcsim.app/sh/jwDTPmjKrPbt",
+      "shareDps": 89793,
+      "characters": [
+        "neuvillette",
+        "furina",
+        "zhongli",
+        "jean"
+      ],
+      "dps": 89474,
+      "dpsMin": 77169,
+      "dpsMax": 92454,
+      "duration": 104.95766666666663,
+      "iterations": 200,
+      "configFile": "tools/gcsim/configs/neuv-hyper.txt"
+    },
+    {
+      "id": "hutao-vape",
+      "name": "胡桃蒸发",
+      "axis": "蒸发",
+      "notes": "经典胡桃蒸发轴，社区 share。",
+      "source": "gcsim-share",
+      "shareId": "dhtzhdQDtdfj",
+      "shareUrl": "https://gcsim.app/sh/dhtzhdQDtdfj",
+      "shareDps": 80632,
+      "characters": [
+        "hutao",
+        "yelan",
+        "bennett",
+        "furina"
+      ],
+      "dps": 80611,
+      "dpsMin": 72292,
+      "dpsMax": 85616,
+      "duration": 62.5,
+      "iterations": 200,
+      "configFile": "tools/gcsim/configs/hutao-vape.txt"
+    },
+    {
+      "id": "raiden-national",
+      "name": "雷国（官方教程轴）",
+      "axis": "蒸发/超载混合",
+      "notes": "gcsim 官方教程示例，非最优化轴，用作基线。",
+      "source": "gcsim-docs",
+      "shareId": null,
+      "shareUrl": null,
+      "shareDps": null,
+      "characters": [
+        "raidenshogun",
+        "xingqiu",
+        "xiangling",
+        "bennett"
+      ],
+      "dps": 10980,
+      "dpsMin": 9609,
+      "dpsMax": 12315,
+      "duration": 90,
+      "iterations": 200,
+      "configFile": "tools/gcsim/configs/raiden-national.txt"
+    }
+  ],
+  "all": [
+    {
+      "id": "mavuika-xilonen-c0",
+      "name": "玛薇卡 / 希诺宁 / 茜特菈莉 / 班尼特",
+      "axis": "融化",
+      "notes": "KQM C0 标准融化队（经典公认主流队）。来源 db.kqm.gg/db/cdz8FgbKf7wk",
+      "source": "kqm",
+      "shareId": null,
+      "shareUrl": null,
+      "shareDps": null,
+      "characters": [
+        "mavuika",
+        "citlali",
+        "xilonen",
+        "bennett"
+      ],
+      "dps": 133645,
+      "dpsMin": 120633,
+      "dpsMax": 140203,
+      "duration": 72.14399999999999,
+      "iterations": 200,
+      "configFile": "tools/gcsim/configs/mavuika-xilonen-citlali-bennett.txt"
+    },
+    {
+      "id": "mavuika-nicole-sucrose",
+      "name": "玛薇卡 / 尼可 / 茜特菈莉 / 砂糖",
+      "axis": "融化",
+      "notes": "KQM C0 配置。来源 db.kqm.gg/db/LcJMWMLG89j8",
+      "source": "kqm",
+      "shareId": null,
+      "shareUrl": null,
+      "shareDps": null,
+      "characters": [
+        "mavuika",
+        "citlali",
+        "sucrose",
+        "nicole"
+      ],
+      "dps": 126439,
+      "dpsMin": 115832,
+      "dpsMax": 130352,
+      "duration": 71.8,
+      "iterations": 200,
+      "configFile": "tools/gcsim/configs/mavuika-nicole-citlali-sucrose.txt"
+    },
+    {
+      "id": "mavuika-esco-c0",
+      "name": "玛薇卡 / 爱可菲 / 茜特菈莉 / 班尼特",
+      "axis": "融化",
+      "notes": "玛薇卡 C0、班尼特 C6；由原 C2 share 改 C0 后重跑。",
+      "source": "gcsim-local",
+      "shareId": null,
+      "shareUrl": null,
+      "shareDps": null,
+      "characters": [
+        "mavuika",
+        "escoffier",
+        "citlali",
+        "bennett"
+      ],
+      "dps": 123237,
+      "dpsMin": 114741,
+      "dpsMax": 136074,
+      "duration": 78.36824999999996,
+      "iterations": 200,
+      "configFile": "tools/gcsim/configs/mavuika-esco-c0.txt"
+    },
+    {
+      "id": "varesa-overload",
+      "name": "瓦雷莎超载队",
+      "axis": "超载",
+      "notes": "社区 share 配置本地重跑。",
+      "source": "gcsim-share",
+      "shareId": "wfQnC9ccgpmK",
+      "shareUrl": "https://gcsim.app/sh/wfQnC9ccgpmK",
+      "shareDps": 115853,
+      "characters": [
+        "varesa",
+        "ororon",
+        "mavuika",
+        "chevreuse"
+      ],
+      "dps": 115043,
+      "dpsMin": 107564,
+      "dpsMax": 122173,
+      "duration": 81.14816666666668,
+      "iterations": 200,
+      "configFile": "tools/gcsim/configs/varesa-overload.txt"
+    },
+    {
+      "id": "hutao-vape",
+      "name": "胡桃蒸发",
+      "axis": "蒸发",
+      "notes": "经典胡桃蒸发轴，社区 share。",
+      "source": "gcsim-share",
+      "shareId": "dhtzhdQDtdfj",
+      "shareUrl": "https://gcsim.app/sh/dhtzhdQDtdfj",
+      "shareDps": 80632,
+      "characters": [
+        "hutao",
+        "yelan",
+        "bennett",
+        "furina"
+      ],
+      "dps": 80611,
+      "dpsMin": 72292,
+      "dpsMax": 85616,
+      "duration": 62.5,
+      "iterations": 200,
+      "configFile": "tools/gcsim/configs/hutao-vape.txt"
+    },
+    {
+      "id": "neuv-hyper",
+      "name": "那维莱特直伤",
+      "axis": "直伤",
+      "notes": "旧版 share，可能需本地重跑验证。",
+      "source": "gcsim-share",
+      "shareId": "jwDTPmjKrPbt",
+      "shareUrl": "https://gcsim.app/sh/jwDTPmjKrPbt",
+      "shareDps": 89793,
+      "characters": [
+        "neuvillette",
+        "furina",
+        "zhongli",
+        "jean"
+      ],
+      "dps": 89474,
+      "dpsMin": 77169,
+      "dpsMax": 92454,
+      "duration": 104.95766666666663,
+      "iterations": 200,
+      "configFile": "tools/gcsim/configs/neuv-hyper.txt"
+    },
+    {
+      "id": "raiden-national",
+      "name": "雷国（官方教程轴）",
+      "axis": "蒸发/超载混合",
+      "notes": "gcsim 官方教程示例，非最优化轴，用作基线。",
+      "source": "gcsim-docs",
+      "shareId": null,
+      "shareUrl": null,
+      "shareDps": null,
+      "characters": [
+        "raidenshogun",
+        "xingqiu",
+        "xiangling",
+        "bennett"
+      ],
+      "dps": 10980,
+      "dpsMin": 9609,
+      "dpsMax": 12315,
+      "duration": 90,
+      "iterations": 200,
+      "configFile": "tools/gcsim/configs/raiden-national.txt"
+    }
+  ],
+  "winner": {
+    "id": "mavuika-xilonen-c0",
+    "name": "玛薇卡 / 希诺宁 / 茜特菈莉 / 班尼特",
+    "axis": "融化",
+    "notes": "KQM C0 标准融化队（经典公认主流队）。来源 db.kqm.gg/db/cdz8FgbKf7wk",
+    "source": "kqm",
+    "shareId": null,
+    "shareUrl": null,
+    "shareDps": null,
+    "characters": [
+      "mavuika",
+      "citlali",
+      "xilonen",
+      "bennett"
+    ],
+    "dps": 133645,
+    "dpsMin": 120633,
+    "dpsMax": 140203,
+    "duration": 72.14399999999999,
+    "iterations": 200,
+    "configFile": "tools/gcsim/configs/mavuika-xilonen-citlali-bennett.txt"
+  }
+}

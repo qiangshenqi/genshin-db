@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>原神图鉴 · genshin-db</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <nav class="topnav" aria-label="主导航">
+    <button type="button" class="nav-btn active" data-view="characters">角色图鉴</button>
+    <button type="button" class="nav-btn" data-view="reactions">元素反应</button>
+    <button type="button" class="nav-btn" data-view="dps">DPS模拟</button>
+  </nav>
+
+  <div id="view-characters">
+    <header class="hero" id="hero">
+      <div class="hero-copy">
+        <p class="brand">原神图鉴</p>
+        <h1>查角色、天赋与命座</h1>
+        <p class="lede">基于本地 genshin-db 数据，支持中英文模糊搜索。</p>
+
+        <form class="search" id="searchForm" autocomplete="off">
+          <label class="sr-only" for="q">搜索</label>
+          <input id="q" name="q" type="search" placeholder="试试：胡桃、甘雨、天空之刃…" autofocus />
+          <button type="submit">查询</button>
+        </form>
+
+        <div class="quick" id="quickTags"></div>
+      </div>
+
+      <div class="hero-visual" id="heroVisual">
+        <div class="hero-frame">
+          <img id="heroImg" alt="" hidden />
+          <div class="hero-fallback" id="heroFallback">
+            <span>选择一名角色开始</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="browse" id="browse">
+        <div class="section-head">
+          <h2>角色一览</h2>
+          <p>按元素筛选，点击即可查看详情。</p>
+        </div>
+        <div class="filters" id="filters"></div>
+        <div class="char-grid" id="charGrid"></div>
+      </section>
+
+      <section class="detail" id="detail" hidden>
+        <div class="section-head detail-head">
+          <div>
+            <p class="eyebrow" id="detailEyebrow"></p>
+            <h2 id="detailName"></h2>
+            <p id="detailTitle"></p>
+          </div>
+          <button type="button" class="ghost" id="backBtn">返回一览</button>
+        </div>
+
+        <div class="meta" id="meta"></div>
+        <p class="desc" id="desc"></p>
+
+        <nav class="tabs" id="tabs" role="tablist" aria-label="详情分页">
+          <button type="button" class="tab active" data-tab="talents" role="tab" aria-selected="true">天赋</button>
+          <button type="button" class="tab" data-tab="constellations" role="tab" aria-selected="false">命座</button>
+        </nav>
+
+        <div class="panel is-active" id="panel-talents" role="tabpanel" data-panel="talents"></div>
+        <div class="panel" id="panel-constellations" role="tabpanel" data-panel="constellations" hidden></div>
+      </section>
+
+      <section class="extra" id="extra" hidden>
+        <div class="section-head">
+          <h2 id="extraTitle">其他匹配</h2>
+        </div>
+        <div id="extraBody"></div>
+      </section>
+    </main>
+  </div>
+
+  <div id="view-dps" hidden>
+    <header class="reactions-hero">
+      <p class="brand brand-sm">DPS 模拟</p>
+      <h1>基于 gcsim 的真实队伍 DPS</h1>
+      <p class="lede">接入开源帧级模拟器 gcsim，不再用启发式猜队伍。</p>
+    </header>
+    <main class="reactions-main">
+      <div class="section-head">
+        <h2>本地重跑排名</h2>
+        <p id="dpsMeta">运行 <code>npm run gcsim:run</code> 生成结果。</p>
+      </div>
+      <div class="winner-banner" id="dpsWinner" hidden></div>
+      <div class="table-wrap">
+        <table class="rx-table" id="dpsTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>队伍</th>
+              <th>主轴</th>
+              <th>本地 DPS</th>
+              <th>Share DPS</th>
+              <th>说明</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="section-head" style="margin-top:2rem">
+        <h2>查询官方 Share</h2>
+        <p>粘贴 gcsim share id，例如 <code>7hD7WcCcdG9N</code></p>
+      </div>
+      <form class="search" id="shareForm">
+        <label class="sr-only" for="shareId">Share ID</label>
+        <input id="shareId" type="text" placeholder="gcsim share id" />
+        <button type="submit">读取</button>
+      </form>
+      <pre class="share-box" id="shareResult" hidden></pre>
+    </main>
+  </div>
+
+  <div id="view-reactions" hidden>
+    <header class="reactions-hero">
+      <p class="brand brand-sm">元素反应</p>
+      <h1>大世界反应倍率表</h1>
+      <p class="lede" id="reactionsNote">整理自大世界战斗机制，不含七圣召唤。</p>
+    </header>
+
+    <main class="reactions-main">
+      <section class="section-head">
+        <h2>速查</h2>
+        <p>先看倍率，再看分类说明。</p>
+      </section>
+      <div class="table-wrap">
+        <table class="rx-table" id="rxQuickTable">
+          <thead>
+            <tr>
+              <th>反应</th>
+              <th>倍率</th>
+              <th>类型</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <section class="section-head" style="margin-top:2rem">
+        <h2>精通公式</h2>
+        <p>三类精通加成算法不同。</p>
+      </section>
+      <div class="rx-grid" id="rxEmGrid"></div>
+
+      <section class="section-head" style="margin-top:2rem">
+        <h2>等级系数</h2>
+        <p>剧变 / 激化常用等级系数（角色等级）。</p>
+      </section>
+      <div class="table-wrap">
+        <table class="rx-table" id="rxLevelTable">
+          <thead>
+            <tr>
+              <th>等级</th>
+              <th>系数</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <section class="section-head" style="margin-top:2rem">
+        <h2>详细说明</h2>
+        <p>按反应类型查看触发方式与计算公式。</p>
+      </section>
+      <div class="filters" id="rxFilters"></div>
+      <div class="rx-list" id="rxList"></div>
+    </main>
+  </div>
+
+  <footer>
+    <p>数据来自本地 <code>genshin-db</code> · 仅供学习演示</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

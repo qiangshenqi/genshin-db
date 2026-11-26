@@ -1,0 +1,144 @@
+{
+  "fixed": {
+    "mavuika": "C0 / 超越之匙 R1 / 黑曜秘典4",
+    "xilonenCons": "C0",
+    "citlaliCons": "C0",
+    "bennettCons": "C6",
+    "excluded": [
+      "峰巡首歌",
+      "风鹰剑"
+    ]
+  },
+  "searchCombos": 40,
+  "searchIterations": 80,
+  "finalIterations": 200,
+  "generatedAt": "2026-11-26T04:02:15.488Z",
+  "winner": {
+    "rank": 2,
+    "dps": 154695,
+    "dpsMin": 145099,
+    "dpsMax": 162823,
+    "xilonen": "西风剑 + 千岩牢固4",
+    "citlali": "祭星者之望 + 烬城勇者绘卷4",
+    "bennett": "暗巷闪光 + 昔日宗室之仪4",
+    "config": "tools/gcsim/configs/mavuika-support-alt-2.txt"
+  },
+  "topFinal": [
+    {
+      "rank": 2,
+      "dps": 154695,
+      "dpsMin": 145099,
+      "dpsMax": 162823,
+      "xilonen": "西风剑 + 千岩牢固4",
+      "citlali": "祭星者之望 + 烬城勇者绘卷4",
+      "bennett": "暗巷闪光 + 昔日宗室之仪4",
+      "config": "tools/gcsim/configs/mavuika-support-alt-2.txt"
+    },
+    {
+      "rank": 1,
+      "dps": 154165,
+      "dpsMin": 144691,
+      "dpsMax": 161922,
+      "xilonen": "苍古自由之誓 + 千岩牢固4",
+      "citlali": "祭星者之望 + 烬城勇者绘卷4",
+      "bennett": "原木刀 + 昔日宗室之仪4",
+      "config": "tools/gcsim/configs/mavuika-support-alt-1.txt"
+    },
+    {
+      "rank": 4,
+      "dps": 151894,
+      "dpsMin": 142527,
+      "dpsMax": 159640,
+      "xilonen": "西风剑 + 千岩牢固4",
+      "citlali": "祭星者之望 + 烬城勇者绘卷4",
+      "bennett": "原木刀 + 昔日宗室之仪4",
+      "config": "tools/gcsim/configs/mavuika-support-alt-4.txt"
+    },
+    {
+      "rank": 3,
+      "dps": 151827,
+      "dpsMin": 143322,
+      "dpsMax": 159825,
+      "xilonen": "息止轻笛 + 千岩牢固4",
+      "citlali": "祭星者之望 + 烬城勇者绘卷4",
+      "bennett": "原木刀 + 昔日宗室之仪4",
+      "config": "tools/gcsim/configs/mavuika-support-alt-3.txt"
+    },
+    {
+      "rank": 5,
+      "dps": 149489,
+      "dpsMin": 106183,
+      "dpsMax": 163996,
+      "xilonen": "息止轻笛 + 千岩牢固4",
+      "citlali": "祭星者之望 + 烬城勇者绘卷4",
+      "bennett": "暗巷闪光 + 昔日宗室之仪4",
+      "config": "tools/gcsim/configs/mavuika-support-alt-5.txt"
+    }
+  ],
+  "topSearch": [
+    {
+      "dps": 155074,
+      "xilonen": "苍古自由之誓 + 千岩牢固4",
+      "citlali": "祭星者之望 + 烬城勇者绘卷4",
+      "bennett": "原木刀 + 昔日宗室之仪4"
+    },
+    {
+      "dps": 154457,
+      "xilonen": "西风剑 + 千岩牢固4",
+      "citlali": "祭星者之望 + 烬城勇者绘卷4",
+      "bennett": "暗巷闪光 + 昔日宗室之仪4"
+    },
+    {
+      "dps": 151813,
+      "xilonen": "息止轻笛 + 千岩牢固4",
+      "citlali": "祭星者之望 + 烬城勇者绘卷4",
+      "bennett": "原木刀 + 昔日宗室之仪4"
+    },
+    {
+      "dps": 151617,
+      "xilonen": "西风剑 + 千岩牢固4",
+      "citlali": "祭星者之望 + 烬城勇者绘卷4",
+      "bennett": "原木刀 + 昔日宗室之仪4"
+    },
+    {
+      "dps": 150547,
+      "xilonen": "息止轻笛 + 千岩牢固4",
+      "citlali": "祭星者之望 + 烬城勇者绘卷4",
+      "bennett": "暗巷闪光 + 昔日宗室之仪4"
+    },
+    {
+      "dps": 149631,
+      "xilonen": "原木刀 + 千岩牢固4",
+      "citlali": "祭星者之望 + 烬城勇者绘卷4",
+      "bennett": "暗巷闪光 + 昔日宗室之仪4"
+    },
+    {
+      "dps": 148416,
+      "xilonen": "苍古自由之誓 + 千岩牢固4",
+      "citlali": "祭星者之望 + 烬城勇者绘卷4",
+      "bennett": "西风剑 + 昔日宗室之仪4"
+    },
+    {
+      "dps": 145651,
+      "xilonen": "息止轻笛 + 千岩牢固4",
+      "citlali": "祭星者之望 + 烬城勇者绘卷4",
+      "bennett": "西风剑 + 昔日宗室之仪4"
+    },
+    {
+      "dps": 145229,
+      "xilonen": "原木刀 + 千岩牢固4",
+      "citlali": "祭星者之望 + 烬城勇者绘卷4",
+      "bennett": "西风剑 + 昔日宗室之仪4"
+    },
+    {
+      "dps": 144929,
+      "xilonen": "西风剑 + 千岩牢固4",
+      "citlali": "讨龙英杰谭 + 烬城勇者绘卷4",
+      "bennett": "暗巷闪光 + 昔日宗室之仪4"
+    }
+  ],
+  "vsPeakAquila": {
+    "dps": 166004,
+    "note": "含峰巡+风鹰的原第一名"
+  }
+}

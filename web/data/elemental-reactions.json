@@ -1,0 +1,287 @@
+{
+  "title": "大世界元素反应",
+  "note": "整理自大世界战斗机制（不含七圣召唤）。转化反应伤害还受角色等级、精通、反应伤害加成与敌人抗性影响。",
+  "emFormulas": [
+    {
+      "id": "amplifying",
+      "name": "增幅类精通加成",
+      "appliesTo": ["蒸发", "融化"],
+      "formula": "2.78 × 精通 / (精通 + 1400)",
+      "example": "精通 100 时约 +18.5%"
+    },
+    {
+      "id": "transformative",
+      "name": "剧变类精通加成",
+      "appliesTo": ["超载", "感电", "超导", "扩散", "碎冰", "燃烧", "绽放", "烈绽放", "超绽放"],
+      "formula": "16 × 精通 / (精通 + 2000)",
+      "example": "精通 100 时约 +76.2%"
+    },
+    {
+      "id": "additive",
+      "name": "激化类精通加成",
+      "appliesTo": ["超激化", "蔓激化"],
+      "formula": "5 × 精通 / (精通 + 1200)",
+      "example": "精通 100 时约 +38.5%"
+    }
+  ],
+  "levelMultiplier": {
+    "description": "剧变/激化用到的等级系数（部分常用等级）",
+    "values": {
+      "1": 17.17,
+      "20": 80.58,
+      "40": 207.38,
+      "50": 323.6,
+      "60": 492.88,
+      "70": 722.98,
+      "80": 1077.44,
+      "90": 1446.85
+    }
+  },
+  "categories": [
+    {
+      "id": "amplifying",
+      "name": "增幅反应",
+      "summary": "直接乘在本次技能/攻击伤害上。"
+    },
+    {
+      "id": "transformative",
+      "name": "剧变反应",
+      "summary": "独立结算伤害：等级系数 × 反应倍率 × (1+精通加成) × (1+反应伤害加成) × 抗性。"
+    },
+    {
+      "id": "additive",
+      "name": "激化反应",
+      "summary": "给本次雷/草伤害附加固定值，再参与该次攻击的乘区。"
+    },
+    {
+      "id": "utility",
+      "name": "控制 / 护盾类",
+      "summary": "本身通常不直接造成乘区伤害，但有重要机制效果。"
+    }
+  ],
+  "reactions": [
+    {
+      "id": "vaporize",
+      "name": "蒸发",
+      "category": "amplifying",
+      "elements": ["火", "水"],
+      "trigger": [
+        { "aura": "水", "trigger": "火", "multiplier": 1.5, "note": "火打水着蒸发" },
+        { "aura": "火", "trigger": "水", "multiplier": 2.0, "note": "水打火着蒸发" }
+      ],
+      "damageType": "跟随触发攻击元素",
+      "effect": "本次伤害直接乘以倍率，并吃增幅精通加成。",
+      "formula": "最终伤害 = 原伤害 × 反应倍率 × (1 + 增幅精通加成 + 其他蒸发/融化加成)"
+    },
+    {
+      "id": "melt",
+      "name": "融化",
+      "category": "amplifying",
+      "elements": ["火", "冰"],
+      "trigger": [
+        { "aura": "冰", "trigger": "火", "multiplier": 2.0, "note": "火打冰着融化" },
+        { "aura": "火", "trigger": "冰", "multiplier": 1.5, "note": "冰打火着融化" }
+      ],
+      "damageType": "跟随触发攻击元素",
+      "effect": "本次伤害直接乘以倍率，并吃增幅精通加成。",
+      "formula": "最终伤害 = 原伤害 × 反应倍率 × (1 + 增幅精通加成 + 其他蒸发/融化加成)"
+    },
+    {
+      "id": "overload",
+      "name": "超载",
+      "category": "transformative",
+      "elements": ["火", "雷"],
+      "trigger": [
+        { "aura": "火", "trigger": "雷", "multiplier": 2.0 },
+        { "aura": "雷", "trigger": "火", "multiplier": 2.0 }
+      ],
+      "damageType": "火元素范围伤害",
+      "effect": "造成火元素爆炸伤害，可击飞轻量敌人。",
+      "formula": "伤害 = 等级系数 × 2.0 × (1 + 剧变精通加成) × (1 + 超载伤害加成) × 抗性"
+    },
+    {
+      "id": "electrocharged",
+      "name": "感电",
+      "category": "transformative",
+      "elements": ["水", "雷"],
+      "trigger": [
+        { "aura": "水", "trigger": "雷", "multiplier": 1.2 },
+        { "aura": "雷", "trigger": "水", "multiplier": 1.2 }
+      ],
+      "damageType": "雷元素持续伤害",
+      "effect": "周期性对附着水+雷的目标造成雷伤，可传导到附近带水目标。",
+      "formula": "单次伤害 = 等级系数 × 1.2 × (1 + 剧变精通加成) × (1 + 感电伤害加成) × 抗性"
+    },
+    {
+      "id": "superconduct",
+      "name": "超导",
+      "category": "transformative",
+      "elements": ["冰", "雷"],
+      "trigger": [
+        { "aura": "冰", "trigger": "雷", "multiplier": 1.0 },
+        { "aura": "雷", "trigger": "冰", "multiplier": 1.0 }
+      ],
+      "damageType": "冰元素范围伤害",
+      "effect": "造成冰伤，并使受影响敌人物理抗性降低 40%，持续 12 秒。",
+      "formula": "伤害 = 等级系数 × 1.0 × (1 + 剧变精通加成) × (1 + 超导伤害加成) × 抗性"
+    },
+    {
+      "id": "swirl",
+      "name": "扩散",
+      "category": "transformative",
+      "elements": ["风", "火/水/雷/冰"],
+      "trigger": [
+        { "aura": "火", "trigger": "风", "multiplier": 0.6 },
+        { "aura": "水", "trigger": "风", "multiplier": 0.6 },
+        { "aura": "雷", "trigger": "风", "multiplier": 0.6 },
+        { "aura": "冰", "trigger": "风", "multiplier": 0.6 }
+      ],
+      "damageType": "被扩散元素的范围伤害",
+      "effect": "造成对应元素伤害，并将该元素扩散到周围敌人。",
+      "formula": "伤害 = 等级系数 × 0.6 × (1 + 剧变精通加成) × (1 + 扩散伤害加成) × 抗性"
+    },
+    {
+      "id": "shatter",
+      "name": "碎冰",
+      "category": "transformative",
+      "elements": ["冻结", "物理/钝击"],
+      "trigger": [
+        { "aura": "冻结", "trigger": "物理/双手剑/岩震等", "multiplier": 1.5 }
+      ],
+      "damageType": "物理伤害",
+      "effect": "击碎冻结状态时造成物理伤害。",
+      "formula": "伤害 = 等级系数 × 1.5 × (1 + 剧变精通加成) × 抗性"
+    },
+    {
+      "id": "burning",
+      "name": "燃烧",
+      "category": "transformative",
+      "elements": ["草", "火"],
+      "trigger": [
+        { "aura": "草", "trigger": "火", "multiplier": 0.25 },
+        { "aura": "火", "trigger": "草", "multiplier": 0.25 }
+      ],
+      "damageType": "火元素持续伤害",
+      "effect": "周期性造成火元素伤害，并维持燃烧附着。",
+      "formula": "单跳伤害 = 等级系数 × 0.25 × (1 + 剧变精通加成) × (1 + 燃烧伤害加成) × 抗性"
+    },
+    {
+      "id": "bloom",
+      "name": "绽放",
+      "category": "transformative",
+      "elements": ["草", "水"],
+      "trigger": [
+        { "aura": "草", "trigger": "水", "multiplier": 2.0 },
+        { "aura": "水", "trigger": "草", "multiplier": 2.0 }
+      ],
+      "damageType": "草元素（草原核爆炸）",
+      "effect": "生成草原核；爆炸或被进一步触发为烈绽放/超绽放。",
+      "formula": "草原核爆炸 = 等级系数 × 2.0 × (1 + 剧变精通加成) × (1 + 绽放伤害加成) × 抗性"
+    },
+    {
+      "id": "burgeon",
+      "name": "烈绽放",
+      "category": "transformative",
+      "elements": ["草原核", "火"],
+      "trigger": [
+        { "aura": "草原核", "trigger": "火", "multiplier": 3.0 }
+      ],
+      "damageType": "草元素范围伤害",
+      "effect": "火元素触发草原核，造成更高倍率草伤爆炸。",
+      "formula": "伤害 = 等级系数 × 3.0 × (1 + 剧变精通加成) × (1 + 烈绽放伤害加成) × 抗性"
+    },
+    {
+      "id": "hyperbloom",
+      "name": "超绽放",
+      "category": "transformative",
+      "elements": ["草原核", "雷"],
+      "trigger": [
+        { "aura": "草原核", "trigger": "雷", "multiplier": 3.0 }
+      ],
+      "damageType": "草元素（追击）",
+      "effect": "雷元素触发草原核，生成追踪敌人的草元素伤害。",
+      "formula": "伤害 = 等级系数 × 3.0 × (1 + 剧变精通加成) × (1 + 超绽放伤害加成) × 抗性"
+    },
+    {
+      "id": "aggravate",
+      "name": "超激化",
+      "category": "additive",
+      "elements": ["原激化", "雷"],
+      "trigger": [
+        { "aura": "原激化", "trigger": "雷", "multiplier": 1.15 }
+      ],
+      "damageType": "附加到本次雷元素伤害",
+      "effect": "给本次雷伤附加固定值，再吃暴击、增伤等乘区。",
+      "formula": "附加值 = 等级系数 × 1.15 × (1 + 激化精通加成)；最终雷伤 = (原伤害 + 附加值) × 其他乘区"
+    },
+    {
+      "id": "spread",
+      "name": "蔓激化",
+      "category": "additive",
+      "elements": ["原激化", "草"],
+      "trigger": [
+        { "aura": "原激化", "trigger": "草", "multiplier": 1.25 }
+      ],
+      "damageType": "附加到本次草元素伤害",
+      "effect": "给本次草伤附加固定值，再吃暴击、增伤等乘区。",
+      "formula": "附加值 = 等级系数 × 1.25 × (1 + 激化精通加成)；最终草伤 = (原伤害 + 附加值) × 其他乘区"
+    },
+    {
+      "id": "quicken",
+      "name": "原激化",
+      "category": "utility",
+      "elements": ["草", "雷"],
+      "trigger": [
+        { "aura": "草", "trigger": "雷", "multiplier": null },
+        { "aura": "雷", "trigger": "草", "multiplier": null }
+      ],
+      "damageType": "无直接伤害",
+      "effect": "生成原激化状态，可作为超激化/蔓激化的前置。",
+      "formula": "无独立伤害倍率"
+    },
+    {
+      "id": "frozen",
+      "name": "冻结",
+      "category": "utility",
+      "elements": ["冰", "水"],
+      "trigger": [
+        { "aura": "冰", "trigger": "水", "multiplier": null },
+        { "aura": "水", "trigger": "冰", "multiplier": null }
+      ],
+      "damageType": "无直接伤害",
+      "effect": "使目标冻结；被钝击等可触发碎冰。",
+      "formula": "无独立伤害倍率（碎冰见上）"
+    },
+    {
+      "id": "crystallize",
+      "name": "结晶",
+      "category": "utility",
+      "elements": ["岩", "火/水/雷/冰"],
+      "trigger": [
+        { "aura": "火", "trigger": "岩", "multiplier": null },
+        { "aura": "水", "trigger": "岩", "multiplier": null },
+        { "aura": "雷", "trigger": "岩", "multiplier": null },
+        { "aura": "冰", "trigger": "岩", "multiplier": null }
+      ],
+      "damageType": "无伤害（生成对应元素护盾）",
+      "effect": "生成结晶碎片，拾取后获得对应元素护盾；护盾吸收量随等级与岩元素精通提升。",
+      "formula": "护盾吸收量随角色等级与精通成长，无攻击伤害倍率"
+    }
+  ],
+  "quickReference": [
+    { "name": "蒸发", "multiplierText": "火→水 1.5× / 水→火 2.0×", "type": "增幅" },
+    { "name": "融化", "multiplierText": "火→冰 2.0× / 冰→火 1.5×", "type": "增幅" },
+    { "name": "超载", "multiplierText": "2.0× 等级系数", "type": "剧变·火" },
+    { "name": "感电", "multiplierText": "1.2× 等级系数", "type": "剧变·雷" },
+    { "name": "超导", "multiplierText": "1.0× 等级系数", "type": "剧变·冰" },
+    { "name": "扩散", "multiplierText": "0.6× 等级系数", "type": "剧变·扩散元素" },
+    { "name": "碎冰", "multiplierText": "1.5× 等级系数", "type": "剧变·物理" },
+    { "name": "燃烧", "multiplierText": "0.25× 等级系数 / 跳", "type": "剧变·火" },
+    { "name": "绽放", "multiplierText": "2.0× 等级系数", "type": "剧变·草" },
+    { "name": "烈绽放", "multiplierText": "3.0× 等级系数", "type": "剧变·草" },
+    { "name": "超绽放", "multiplierText": "3.0× 等级系数", "type": "剧变·草" },
+    { "name": "超激化", "multiplierText": "附加 1.15× 等级系数", "type": "激化·雷" },
+    { "name": "蔓激化", "multiplierText": "附加 1.25× 等级系数", "type": "激化·草" },
+    { "name": "冻结 / 结晶 / 原激化", "multiplierText": "无直接伤害倍率", "type": "机制" }
+  ]
+}

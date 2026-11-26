@@ -14,7 +14,10 @@
 		"build": "node ./scripts/webpack/build.js",
 		"buildAllDist": "node ./scripts/webpack/buildAllDist.js",
 		"publish": "node ./scripts/publish/publish.js",
-		"publishTcg": "npm run publish tcg"
+		"publishTcg": "npm run publish tcg",
+		"web": "node ./web/server.js",
+		"gcsim:install": "node ./scripts/gcsim/install.js",
+		"gcsim:run": "node ./scripts/gcsim/runner.js"
 	},
 	"keywords": [
 		"genshin-impact",
