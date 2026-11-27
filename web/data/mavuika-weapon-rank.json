@@ -1,0 +1,174 @@
+{
+  "fixed": {
+    "team": "玛薇卡 C0 / 希诺宁 C0 苍古+千岩 / 茜特菈莉 C0 祭星+绘卷 / 班尼特 C6 原木R1+宗室",
+    "mavuikaSet": "黑曜秘典4",
+    "baselineWeapon": "超越之匙 R1",
+    "iterations": 200
+  },
+  "generatedAt": "2026-11-26T04:24:50.404Z",
+  "baselineDps": 154516,
+  "winner": {
+    "rank": 1,
+    "name": "焚曜千阳",
+    "refine": 1,
+    "dps": 155543,
+    "min": 121896,
+    "max": 179694,
+    "vsBaseline": 1027
+  },
+  "ranking": [
+    {
+      "rank": 1,
+      "name": "焚曜千阳",
+      "refine": 1,
+      "dps": 155543,
+      "min": 121896,
+      "max": 179694,
+      "vsBaseline": 1027
+    },
+    {
+      "rank": 2,
+      "name": "超越之匙",
+      "refine": 1,
+      "dps": 154516,
+      "min": 143579,
+      "max": 163557,
+      "vsBaseline": 0
+    },
+    {
+      "rank": 3,
+      "name": "无无禁锢",
+      "refine": 1,
+      "dps": 149840,
+      "min": 141262,
+      "max": 157456,
+      "vsBaseline": -4676
+    },
+    {
+      "rank": 4,
+      "name": "狼的末路",
+      "refine": 1,
+      "dps": 144018,
+      "min": 136991,
+      "max": 151668,
+      "vsBaseline": -10498
+    },
+    {
+      "rank": 5,
+      "name": "赤角石溃杵",
+      "refine": 1,
+      "dps": 143680,
+      "min": 132100,
+      "max": 152159,
+      "vsBaseline": -10836
+    },
+    {
+      "rank": 6,
+      "name": "苇海信标",
+      "refine": 1,
+      "dps": 143036,
+      "min": 128863,
+      "max": 150844,
+      "vsBaseline": -11480
+    },
+    {
+      "rank": 7,
+      "name": "裁断",
+      "refine": 1,
+      "dps": 138598,
+      "min": 114267,
+      "max": 154032,
+      "vsBaseline": -15918
+    },
+    {
+      "rank": 8,
+      "name": "松籁响起之时",
+      "refine": 1,
+      "dps": 138023,
+      "min": 129404,
+      "max": 144853,
+      "vsBaseline": -16493
+    },
+    {
+      "rank": 9,
+      "name": "螭骨剑",
+      "refine": 5,
+      "dps": 137925,
+      "min": 120050,
+      "max": 148204,
+      "vsBaseline": -16591
+    },
+    {
+      "rank": 10,
+      "name": "天空之傲",
+      "refine": 1,
+      "dps": 129863,
+      "min": 122762,
+      "max": 136288,
+      "vsBaseline": -24653
+    },
+    {
+      "rank": 11,
+      "name": "试作古华",
+      "refine": 5,
+      "dps": 128425,
+      "min": 119752,
+      "max": 134507,
+      "vsBaseline": -26091
+    },
+    {
+      "rank": 12,
+      "name": "撼地者",
+      "refine": 5,
+      "dps": 126898,
+      "min": 118668,
+      "max": 135369,
+      "vsBaseline": -27618
+    },
+    {
+      "rank": 13,
+      "name": "硕果钩",
+      "refine": 5,
+      "dps": 126643,
+      "min": 118892,
+      "max": 133770,
+      "vsBaseline": -27873
+    },
+    {
+      "rank": 14,
+      "name": "黑岩斩刀",
+      "refine": 1,
+      "dps": 125969,
+      "min": 118801,
+      "max": 132514,
+      "vsBaseline": -28547
+    },
+    {
+      "rank": 15,
+      "name": "山王长牙",
+      "refine": 1,
+      "dps": 125484,
+      "min": 100532,
+      "max": 143031,
+      "vsBaseline": -29032
+    },
+    {
+      "rank": 16,
+      "name": "雨裁",
+      "refine": 5,
+      "dps": 123509,
+      "min": 116262,
+      "max": 130646,
+      "vsBaseline": -31007
+    },
+    {
+      "rank": 17,
+      "name": "聊聊棍",
+      "refine": 5,
+      "dps": 120306,
+      "min": 96258,
+      "max": 132968,
+      "vsBaseline": -34210
+    }
+  ]
+}

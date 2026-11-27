@@ -1,0 +1,219 @@
+{
+  "fixed": {
+    "weapons": "超越之匙 / 苍古 / 祭星 / 原木R1",
+    "sets": "黑曜4 / 千岩4 / 绘卷4 / 宗室4",
+    "rotation": "现用融化轴"
+  },
+  "searchCombos": 216,
+  "searchIterations": 80,
+  "finalIterations": 200,
+  "generatedAt": "2026-11-26T06:26:58.370Z",
+  "winner": {
+    "dps": 154598,
+    "dpsMin": 144441,
+    "dpsMax": 163702,
+    "mavuika": "精通/火伤/暴击",
+    "xilonen": "防御/防御/防御",
+    "citlali": "充能/冰伤/暴击",
+    "bennett": "充能/火伤/暴击",
+    "config": "tools/gcsim/configs/mavuika-mains-best-1.txt"
+  },
+  "topFinal": [
+    {
+      "dps": 154598,
+      "dpsMin": 144441,
+      "dpsMax": 163702,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "防御/防御/防御",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/火伤/暴击",
+      "config": "tools/gcsim/configs/mavuika-mains-best-1.txt"
+    },
+    {
+      "dps": 154303,
+      "dpsMin": 144860,
+      "dpsMax": 160976,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "防御/充能/暴击",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/攻击/暴击",
+      "config": "tools/gcsim/configs/mavuika-mains-best-7.txt"
+    },
+    {
+      "dps": 154030,
+      "dpsMin": 145409,
+      "dpsMax": 161359,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "防御/防御/暴击",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/火伤/暴击",
+      "config": "tools/gcsim/configs/mavuika-mains-best-4.txt"
+    },
+    {
+      "dps": 152572,
+      "dpsMin": 144025,
+      "dpsMax": 160550,
+      "mavuika": "攻击/火伤/暴击",
+      "xilonen": "防御/充能/暴击",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/攻击/暴击",
+      "config": "tools/gcsim/configs/mavuika-mains-best-9.txt"
+    },
+    {
+      "dps": 152457,
+      "dpsMin": 144172,
+      "dpsMax": 158902,
+      "mavuika": "攻击/火伤/暴击",
+      "xilonen": "防御/防御/防御",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/火伤/暴击",
+      "config": "tools/gcsim/configs/mavuika-mains-best-3.txt"
+    },
+    {
+      "dps": 152290,
+      "dpsMin": 144673,
+      "dpsMax": 159107,
+      "mavuika": "攻击/火伤/暴击",
+      "xilonen": "防御/防御/暴击",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/火伤/暴击",
+      "config": "tools/gcsim/configs/mavuika-mains-best-6.txt"
+    },
+    {
+      "dps": 142875,
+      "dpsMin": 117555,
+      "dpsMax": 164157,
+      "mavuika": "精通/火伤/暴伤",
+      "xilonen": "防御/防御/防御",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/火伤/暴击",
+      "config": "tools/gcsim/configs/mavuika-mains-best-2.txt"
+    },
+    {
+      "dps": 141767,
+      "dpsMin": 111823,
+      "dpsMax": 162631,
+      "mavuika": "精通/火伤/暴伤",
+      "xilonen": "防御/充能/暴击",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/攻击/暴击",
+      "config": "tools/gcsim/configs/mavuika-mains-best-8.txt"
+    }
+  ],
+  "topSearch": [
+    {
+      "dps": 155372,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "防御/防御/防御",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/火伤/暴击"
+    },
+    {
+      "dps": 154623,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "防御/防御/暴击",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/火伤/暴击"
+    },
+    {
+      "dps": 154421,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "防御/充能/暴击",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/攻击/暴击"
+    },
+    {
+      "dps": 154264,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "充能/防御/暴击",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/攻击/攻击"
+    },
+    {
+      "dps": 154256,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "防御/防御/暴击",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/攻击/暴击"
+    },
+    {
+      "dps": 154217,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "防御/充能/防御",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/火伤/生命"
+    },
+    {
+      "dps": 154159,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "充能/防御/暴击",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/火伤/暴击"
+    },
+    {
+      "dps": 154138,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "防御/充能/暴击",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/火伤/暴击"
+    },
+    {
+      "dps": 154099,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "充能/防御/防御",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/攻击/攻击"
+    },
+    {
+      "dps": 153972,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "防御/充能/暴击",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/火伤/生命"
+    },
+    {
+      "dps": 153905,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "防御/充能/防御",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/火伤/暴击"
+    },
+    {
+      "dps": 153895,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "防御/防御/防御",
+      "citlali": "充能/精通/暴击",
+      "bennett": "充能/攻击/攻击"
+    },
+    {
+      "dps": 153881,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "防御/防御/防御",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/生命/生命"
+    },
+    {
+      "dps": 153857,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "充能/防御/防御",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/生命/生命"
+    },
+    {
+      "dps": 153813,
+      "mavuika": "精通/火伤/暴击",
+      "xilonen": "防御/防御/暴击",
+      "citlali": "充能/冰伤/暴击",
+      "bennett": "充能/攻击/攻击"
+    }
+  ],
+  "userRequested": {
+    "dps": 81323,
+    "dpsMin": 71198,
+    "dpsMax": 92175,
+    "mavuika": "精通/火伤/暴击",
+    "xilonen": "防御/防御/防御",
+    "citlali": "精通/精通/精通",
+    "bennett": "充能/攻击/攻击"
+  }
+}

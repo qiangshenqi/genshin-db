@@ -1,0 +1,68 @@
+{
+  "note": "C0桑多涅；锻造赎罪之刃R5；幻灭影中4；轴为KQM示例简化，结果供相对比较",
+  "iterations": 200,
+  "generatedAt": "2026-11-26T08:49:38.415Z",
+  "winner": {
+    "name": "桑多涅/八重C1/奥黛塔/阿罗夏C6",
+    "dps": 145405,
+    "dpsMin": 138548,
+    "dpsMax": 148887,
+    "config": "tools/gcsim/configs/sandrone-yae-odette-alyosha6.txt"
+  },
+  "ranking": [
+    {
+      "rank": 1,
+      "name": "桑多涅/八重C1/奥黛塔/阿罗夏C6",
+      "dps": 145405,
+      "dpsMin": 138548,
+      "dpsMax": 148887,
+      "config": "tools/gcsim/configs/sandrone-yae-odette-alyosha6.txt"
+    },
+    {
+      "rank": 2,
+      "name": "桑多涅/八重C1/奥黛塔/爱可菲",
+      "dps": 129375,
+      "dpsMin": 122029,
+      "dpsMax": 136516,
+      "config": "tools/gcsim/configs/sandrone-yae-odette-esco.txt"
+    },
+    {
+      "rank": 3,
+      "name": "桑多涅/八重C1/奥黛塔/七七",
+      "dps": 128076,
+      "dpsMin": 123157,
+      "dpsMax": 130921,
+      "config": "tools/gcsim/configs/sandrone-yae-odette-qiqi.txt"
+    },
+    {
+      "rank": 4,
+      "name": "桑多涅/八重C1/奥黛塔/希诺宁",
+      "dps": 120243,
+      "dpsMin": 115392,
+      "dpsMax": 122797,
+      "config": "tools/gcsim/configs/sandrone-yae-odette-xilonen.txt"
+    },
+    {
+      "rank": 5,
+      "name": "桑多涅/八重C1/七七/爱可菲（无奥黛塔）",
+      "dps": 90664,
+      "dpsMin": 90243,
+      "dpsMax": 90851,
+      "config": "tools/gcsim/configs/sandrone-yae-qiqi-esco.txt"
+    },
+    {
+      "rank": 6,
+      "name": "桑多涅/阿罗夏C0/奥黛塔/爱可菲",
+      "dps": 84756,
+      "dpsMin": 61143,
+      "dpsMax": 91343,
+      "config": "tools/gcsim/configs/sandrone-alyosha0-odette-esco.txt"
+    }
+  ],
+  "failed": [
+    {
+      "name": "桑多涅/阿罗夏C0/奥黛塔/沃雅妮莎",
+      "error": "gcsim failed (sandrone-alyosha0-odette-vodya.txt): \n2026/11/26 16:49:37 ln24:12: expecting ; at end of  statement, got char\n"
+    }
+  ]
+}
