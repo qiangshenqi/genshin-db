@@ -1,0 +1,248 @@
+{
+  "date": "2026-11-28",
+  "iterations": 150,
+  "engine": "gcsim local-missing-chars",
+  "note": "无夜兰；胡桃队用莫娜；~ 表示轴未调通",
+  "hutaoCompare": {
+    "monaFurina": 46604,
+    "xingqiuMona": 20276
+  },
+  "ranking": [
+    {
+      "rank": 1,
+      "id": 1,
+      "name": "桑多涅/八重/奥黛塔/阿罗夏",
+      "dps": 192611,
+      "source": "final-teams/1-木偶-海渊阿罗夏",
+      "reliable": true
+    },
+    {
+      "rank": 2,
+      "id": 2,
+      "name": "桑多涅/八重/奥黛塔/沃雅妮莎",
+      "dps": 188293,
+      "source": "rank28/t02_sandrone_vodya",
+      "reliable": true
+    },
+    {
+      "rank": 3,
+      "id": 6,
+      "name": "玛薇卡/茜特菈莉/希诺宁/班尼特",
+      "dps": 129688,
+      "source": "final-teams/2b-玛-主词条优化钥匙",
+      "reliable": true
+    },
+    {
+      "rank": 4,
+      "id": 12,
+      "name": "绫华/芙宁娜/爱可菲/沃雅妮莎",
+      "dps": 104597,
+      "source": "final-teams/3-绫芙爱沃-沃65k生命",
+      "reliable": true
+    },
+    {
+      "rank": 5,
+      "id": 15,
+      "name": "那维莱特/芙宁娜/万叶/希诺宁",
+      "dps": 81986,
+      "source": "neuv-furina-kazuha-xilonen",
+      "reliable": true
+    },
+    {
+      "rank": 6,
+      "id": 16,
+      "name": "那维莱特/芙宁娜/万叶/钟离",
+      "dps": 70267,
+      "source": "rank28/t16_neuv_zl",
+      "reliable": true
+    },
+    {
+      "rank": 7,
+      "id": 9,
+      "name": "可莉/尼可/夏沃蕾/菲谢尔",
+      "dps": 66126,
+      "source": "final-teams/备-可莉超载",
+      "reliable": true
+    },
+    {
+      "rank": 8,
+      "id": 10,
+      "name": "可莉/尼可/杜林/菲谢尔",
+      "dps": 61678,
+      "source": "rank28/t10_klee_durin",
+      "reliable": true
+    },
+    {
+      "rank": 9,
+      "id": 27,
+      "name": "恰斯卡/芙宁娜/班尼特/茜特菈莉",
+      "dps": 57527,
+      "source": "rank28/t27_chasca",
+      "reliable": true
+    },
+    {
+      "rank": 10,
+      "id": 13,
+      "name": "绫华/芙宁娜/爱可菲/申鹤",
+      "dps": 57484,
+      "source": "final-teams/3b-绫芙爱申鹤",
+      "note": "轴可能低估",
+      "reliable": false
+    },
+    {
+      "rank": 11,
+      "id": 17,
+      "name": "海森/纳西妲/行秋/久岐忍",
+      "dps": 51467,
+      "source": "rank28/t17_alhaitham_hb",
+      "reliable": true
+    },
+    {
+      "rank": 12,
+      "id": 7,
+      "name": "玛薇卡/茜特菈莉/万叶/班尼特",
+      "dps": 51345,
+      "source": "rank28/t07_mav_kazuha",
+      "note": "弱于希诺宁壳",
+      "reliable": true
+    },
+    {
+      "rank": 13,
+      "id": 21,
+      "name": "娜维娅/希诺宁/钟离/班尼特",
+      "dps": 47088,
+      "source": "rank28/t21_navia_geo",
+      "reliable": true
+    },
+    {
+      "rank": 14,
+      "id": 18,
+      "name": "海森/纳西妲/菲谢尔/钟离",
+      "dps": 46981,
+      "source": "rank28/t18_alhaitham_aggravate",
+      "reliable": true
+    },
+    {
+      "rank": 15,
+      "id": 8,
+      "name": "胡桃/莫娜/芙宁娜/班尼特",
+      "dps": 46604,
+      "dpsMin": 42086,
+      "dpsMax": 50289,
+      "duration": 75.41666666666667,
+      "source": "rank28/t08_hutao_mona_furina",
+      "note": "夜兰→莫娜C2讨龙；对照行秋莫娜壳 20276",
+      "reliable": true
+    },
+    {
+      "rank": 16,
+      "id": 5,
+      "name": "桑多涅/奥黛塔/沃雅妮莎/爱可菲",
+      "dps": 46129,
+      "source": "rank28/t05_sandrone_stellar",
+      "note": "无八重",
+      "reliable": true
+    },
+    {
+      "rank": 17,
+      "id": 22,
+      "name": "娜维娅/芙宁娜/钟离/班尼特",
+      "dps": 42017,
+      "source": "rank28/t22_navia_furina",
+      "reliable": true
+    },
+    {
+      "rank": 18,
+      "id": 24,
+      "name": "流浪者/珐露珊/班尼特/钟离",
+      "dps": 41148,
+      "source": "rank28/t24_wanderer",
+      "reliable": true
+    },
+    {
+      "rank": 19,
+      "id": 19,
+      "name": "纳西妲/行秋/久岐忍/柯莱",
+      "dps": 35253,
+      "source": "rank28/t19_nahida_bloom",
+      "reliable": true
+    },
+    {
+      "rank": 20,
+      "id": 3,
+      "name": "娜维娅/莉奈娅/叶洛亚/爱诺",
+      "dps": 34173,
+      "source": "rank28/t03_navia_linnea",
+      "note": "叶C2/爱诺C4",
+      "reliable": true
+    },
+    {
+      "rank": 21,
+      "id": 14,
+      "name": "绫华/莫娜/万叶/迪奥娜",
+      "dps": 33065,
+      "source": "rank28/t14_ayaka_mona",
+      "reliable": true
+    },
+    {
+      "rank": 22,
+      "id": 4,
+      "name": "凝光/莉奈娅/叶洛亚/爱诺",
+      "dps": 31430,
+      "source": "linnea-teams/凝光C6-莉C0-爱诺C4-叶C2",
+      "reliable": true
+    },
+    {
+      "rank": 23,
+      "id": 28,
+      "name": "优菈/米卡/菲谢尔/钟离",
+      "dps": 24093,
+      "source": "rank28/t28_eula",
+      "reliable": true
+    },
+    {
+      "rank": 24,
+      "id": 25,
+      "name": "魈/珐露珊/班尼特/钟离",
+      "dps": 22914,
+      "source": "rank28/t25_xiao",
+      "reliable": true
+    },
+    {
+      "rank": 25,
+      "id": 23,
+      "name": "诺艾尔/五郎/云堇/钟离",
+      "dps": 9123,
+      "source": "rank28/t23_noelle",
+      "note": "轴偏弱",
+      "reliable": false
+    },
+    {
+      "rank": 26,
+      "id": 26,
+      "name": "克洛琳德/纳西妲/菲谢尔/钟离",
+      "dps": 7665,
+      "source": "rank28/t26_clorinde",
+      "note": "轴未调通",
+      "reliable": false
+    },
+    {
+      "rank": 27,
+      "id": 20,
+      "name": "提纳里/纳西妲/菲谢尔/钟离",
+      "dps": 7390,
+      "source": "rank28/t20_tighnari",
+      "note": "轴未调通",
+      "reliable": false
+    },
+    {
+      "rank": 28,
+      "id": 11,
+      "name": "香菱/班尼特/行秋/万叶",
+      "dps": 6422,
+      "source": "rank28/t11_national",
+      "note": "轴未调通",
+      "reliable": false
+    }
+  ]
+}

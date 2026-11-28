@@ -1,0 +1,42 @@
+options swap_delay=12 iteration=120 workers=8;
+target lvl=100 resist=0.1 radius=2 pos=0,2.4 hp=999999999;
+energy every interval=480,720 amount=1;
+
+klee char lvl=90/90 cons=1 talent=9,9,9;
+klee add weapon="lostprayertothesacredwinds" refine=1 lvl=90/90;
+klee add set="crimsonwitchofflames" count=4;
+klee add stats hp=4780 atk=311 atk%=0.466 pyro%=0.466 cr=0.311;
+klee add stats def%=0.124 def=39.36 hp=507.88 hp%=0.0992 atk=33.08 atk%=0.1984 er=0.1102 em=39.64 cr=0.331 cd=0.662;
+
+nicole char lvl=90/90 cons=0 talent=9,9,9;
+nicole add weapon="favoniuscodex" refine=3 lvl=90/90;
+nicole add set="celestialgift" count=4;
+nicole add stats hp=4780 atk=311 atk%=1.398;
+nicole add stats def%=0.124 def=39.36 hp=507.88 hp%=0.0992 atk=33.08 atk%=0.1984 er=0.1102 em=39.64 cr=0.331 cd=0.662 atk%=0.1984;
+
+durin char lvl=90/90 cons=0 talent=9,9,9;
+durin add weapon="favoniuslance" refine=5 lvl=90/90;
+durin add set="noblesseoblige" count=4;
+durin add stats hp=4780 atk=311 er=0.518 pyro%=0.466 cr=0.311;
+durin add stats def%=0.124 def=39.36 hp=507.88 hp%=0.0992 atk=33.08 atk%=0.1984 er=0.1102 em=39.64 cr=0.331 cd=0.662 er=0.3306;
+
+fischl char lvl=90/90 cons=6 talent=9,9,9;
+fischl add weapon="thestringless" refine=3 lvl=90/90;
+fischl add set="goldentroupe" count=4;
+fischl add stats hp=4780 atk=311 atk%=0.466 electro%=0.466 cr=0.311;
+fischl add stats def%=0.124 def=39.36 hp=507.88 hp%=0.0992 atk=33.08 atk%=0.1984 er=0.1102 em=39.64 cr=0.331 cd=0.662;
+
+active fischl;
+fischl attack;
+for let i=0; i<5; i=i+1 {
+  nicole skill;
+  if .nicole.burst.ready { nicole burst; }
+  if .durin.skill.ready { durin skill; }
+  if .durin.burst.ready { durin burst; }
+  if .fischl.skill.ready { fischl attack, skill; } else { fischl attack:2, burst; }
+  klee attack, skill[bounce=3, mine=8];
+  if .klee.burst.ready { klee burst; }
+  for let j=0; j<3; j=j+1 {
+    klee attack[travel=6], charge, attack, attack[travel=6], charge;
+  }
+}

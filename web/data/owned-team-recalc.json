@@ -1,0 +1,79 @@
+{
+    "date":  "2026-11-28",
+    "ranking":  [
+                    {
+                        "dps":  191838,
+                        "team":  "桑多涅/八重/奥黛塔/阿罗夏C6"
+                    },
+                    {
+                        "dps":  164325,
+                        "team":  "桑多涅/八重/奥黛塔/迪奥娜C6"
+                    },
+                    {
+                        "dps":  129848,
+                        "team":  "玛薇卡C0主词条优化"
+                    },
+                    {
+                        "dps":  129272,
+                        "team":  "桑多涅/八重/奥黛塔/爱可菲"
+                    },
+                    {
+                        "dps":  115336,
+                        "team":  "玛薇卡自定义装"
+                    },
+                    {
+                        "dps":  95003,
+                        "team":  "绫华/芙/爱/沃"
+                    },
+                    {
+                        "dps":  82046,
+                        "team":  "那维超绽"
+                    },
+                    {
+                        "dps":  80585,
+                        "team":  "胡桃蒸发参考"
+                    },
+                    {
+                        "dps":  66225,
+                        "team":  "可莉超载"
+                    },
+                    {
+                        "dps":  57412,
+                        "team":  "绫华/芙/爱/申鹤"
+                    }
+                ],
+    "engine":  "gcsim local-missing-chars",
+    "recommend":  [
+                      {
+                          "half":  1,
+                          "dps":  191838,
+                          "team":  [
+                                       "sandrone",
+                                       "yaemiko",
+                                       "odette",
+                                       "alyosha"
+                                   ]
+                      },
+                      {
+                          "half":  2,
+                          "dps":  129848,
+                          "team":  [
+                                       "mavuika",
+                                       "citlali",
+                                       "xilonen",
+                                       "bennett"
+                                   ]
+                      },
+                      {
+                          "half":  3,
+                          "dps":  95003,
+                          "team":  [
+                                       "ayaka",
+                                       "furina",
+                                       "escoffier",
+                                       "vodyanitsa"
+                                   ]
+                      }
+                  ],
+    "iterations":  200
+}

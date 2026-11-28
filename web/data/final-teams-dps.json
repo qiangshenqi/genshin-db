@@ -1,0 +1,65 @@
+[
+    {
+        "name":  "1-木偶-海渊阿罗夏",
+        "dps":  192611,
+        "min":  188858,
+        "max":  194818,
+        "chars":  "sandrone:128715 | yaemiko:43934 | odette:15992 | alyosha:3971"
+    },
+    {
+        "name":  "1b-木偶-雾切阿罗夏",
+        "dps":  191973,
+        "min":  186391,
+        "max":  197116,
+        "chars":  "sandrone:128715 | yaemiko:43934 | odette:15357 | alyosha:3968"
+    },
+    {
+        "name":  "1c-木偶-海渊迪奥娜",
+        "dps":  165040,
+        "min":  162418,
+        "max":  166705,
+        "chars":  "sandrone:105388 | yaemiko:44482 | odette:14285 | diona:885"
+    },
+    {
+        "name":  "2-玛-自定义装钥匙",
+        "dps":  115081,
+        "min":  110560,
+        "max":  119647,
+        "chars":  "mavuika:100779 | xilonen:736 | citlali:11968 | bennett:1599"
+    },
+    {
+        "name":  "2b-玛-主词条优化钥匙",
+        "dps":  129688,
+        "min":  124581,
+        "max":  134277,
+        "chars":  "mavuika:114643 | xilonen:713 | citlali:12569 | bennett:1762"
+    },
+    {
+        "name":  "3-绫芙爱沃-雾切",
+        "dps":  94778,
+        "min":  88797,
+        "max":  100692,
+        "chars":  "kamisatoayaka:54871 | furina:16191 | escoffier:16542 | vodyanitsa:7174"
+    },
+    {
+        "name":  "3b-绫芙爱申鹤",
+        "dps":  57484,
+        "min":  53170,
+        "max":  60699,
+        "chars":  "kamisatoayaka:27993 | furina:8925 | escoffier:17441 | shenhe:3125"
+    },
+    {
+        "name":  "备-可莉超载",
+        "dps":  66126,
+        "min":  63227,
+        "max":  68114,
+        "chars":  "klee:44891 | nicole:1738 | chevreuse:2371 | fischl:17126"
+    },
+    {
+        "name":  "备-胡桃蒸发",
+        "dps":  80826,
+        "min":  72007,
+        "max":  86170,
+        "chars":  "hutao:43947 | yelan:19223 | bennett:1611 | furina:16044"
+    }
+]

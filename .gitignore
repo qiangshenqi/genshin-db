@@ -114,7 +114,13 @@ typings/
 
 # gcsim local binary & run artifacts
 tools/gcsim/gcsim.exe
+tools/gcsim/*.exe
 tools/gcsim/results/
 tools/gcsim/configs/*.run.txt
 tools/gcsim/configs/*-from-share.txt
+tools/gcsim-source/
+
+# Mona (TwiceDrop) formula calculator — large clone / release binaries
+tools/genshin-artifact/
+tools/mona-artifact-app/
 

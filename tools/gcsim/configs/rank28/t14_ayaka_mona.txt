@@ -1,0 +1,40 @@
+options swap_delay=12 iteration=120 workers=8;
+target lvl=100 resist=0.1 radius=2 pos=0,2.4 hp=999999999;
+energy every interval=480,720 amount=1;
+
+ayaka char lvl=90/90 cons=0 talent=10,10,10;
+ayaka add weapon="mistsplitterreforged" refine=1 lvl=90/90;
+ayaka add set="blizzardstrayer" count=4;
+ayaka add stats hp=4780 atk=311 atk%=0.466 cryo%=0.466 cd=0.622;
+ayaka add stats def%=0.124 def=39.36 hp=507.88 hp%=0.0992 atk=33.08 atk%=0.1984 er=0.2204 em=39.64 cr=0.1984 cd=0.7944;
+
+mona char lvl=90/90 cons=2 talent=9,9,9;
+mona add weapon="thrillingtalesofdragonslayers" refine=5 lvl=90/90;
+mona add set="noblesseoblige" count=4;
+mona add stats hp=4780 atk=311 er=0.518 er=0.518 er=0.518;
+mona add stats def%=0.124 def=39.36 hp=507.88 hp%=0.0992 atk=33.08 atk%=0.0992 er=0.3306 em=39.64 cr=0.2648 cd=0.3972;
+
+kazuha char lvl=90/90 cons=0 talent=9,9,9;
+kazuha add weapon="freedomsworn" refine=1 lvl=90/90;
+kazuha add set="viridescentvenerer" count=4;
+kazuha add stats hp=4780 atk=311 em=187 em=187 em=187;
+kazuha add stats def%=0.124 def=39.36 hp=507.88 hp%=0.0992 atk=33.08 atk%=0.0992 er=0.4408 em=118.92 cr=0.132 cd=0.1984;
+
+diona char lvl=90/90 cons=6 talent=9,9,9;
+diona add weapon="sacrificialbow" refine=5 lvl=90/90;
+diona add set="tenacityofthemillelith" count=4;
+diona add stats hp=4780 atk=311 er=0.518 hp%=0.466 hp%=0.466;
+diona add stats def%=0.124 def=39.36 hp=507.88 hp%=0.1984 atk=33.08 atk%=0.0992 er=0.2204 em=39.64 cr=0.2648 cd=0.3972;
+
+active diona;
+for let i=0; i<4; i=i+1 {
+  diona skill[hold=1];
+  if .diona.burst.ready { diona burst; }
+  mona skill;
+  kazuha skill, high_plunge;
+  if .kazuha.burst.ready { kazuha burst; }
+  mona burst;
+  ayaka dash, skill;
+  if .ayaka.burst.ready { ayaka burst; }
+  ayaka attack:2, charge, dash, attack:2, charge, dash, attack:2, charge;
+}
